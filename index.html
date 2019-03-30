@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lANG="en-US">
+
+<head>
+    <title>Train Scheduler</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../TrainScheduler/assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="jumbotron bg-dark">
+                        <h1 class="display-4">Train Scheduler</h1>
+                        <p class="lead text-center">We don't want this to happen!</p>
+                        <img src="assets/images/train-funny.gif" alt="trainHitsCarFunny-gif" id="train-gif">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container border border-light">
+                        <h5 class="font-weight-bold">Current Employees</h5>
+                        <hr class="bg-light">
+                        <table class="table" id="train-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container border border-light">
+                        <h5 class="font-weight-bold">Add Train</h5>
+                        <hr class="bg-light">
+                        <form>
+                            <div class="form-group">
+                                <label for="trainNameTextArea">Train Name</label>
+                                <input class="form-control" id="train-mane" rows="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="destinationTextArea">Destination</label>
+                                <input class="form-control" id="destination" rows="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstTrainTimeTextArea">First Train Time (HH:mm - military time</label>
+                                <input class="form-control" id="1stTrain-time" rows="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequencyTextArea">Frequency (min)</label>
+                                <input class="form-control" id="frequency-min" rows="1">
+                            </div>
+                            <button type="submit" class="btn btn-dark" id="submit-btn">Submit</button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <footer class="fixed-bottom bg-dark footer">
+                        <p></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/javascript/firebase-db.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

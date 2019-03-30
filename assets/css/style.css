@@ -1,0 +1,16 @@
+.container {
+    padding-top: 5px;
+}
+h1 {
+    color: orange;
+}
+
+body {
+    background-color: black;
+    color: orange;
+}
+
+#train-gif {
+    height: 300px;
+    width: 550px;
+}
