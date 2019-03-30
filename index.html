@@ -5,8 +5,8 @@
     <title>Train Scheduler</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,21 +17,28 @@
 
 <body>
     <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="jumbotron bg-dark">
-                        <h1 class="display-4">Train Scheduler</h1>
-                        <p class="lead text-center">We don't want this to happen!</p>
-                        <img src="assets/images/train-funny.gif" class="img-fluid" alt="trainHitsCarFunny-gif" id="train-gif">
-                    </div>
+        <div class="row">
+            <div class="col-1">
+                <p></p>
+            </div>
+            <div class="col-10 text-center">
+                <div class="jumbotron bg-dark">
+                    <h1 class="display-4">Train Scheduler</h1>
+                    <p class="lead text-center">We don't want this to happen!</p>
+                    <img src="assets/images/train-funny.gif" class="img-fluid" alt="trainHitsCarFunny-gif"
+                        id="train-gif">
                 </div>
             </div>
-            <br>
+            <div class="col-1">
+                <p></p>
+            </div>
+        </div>
+        <br>
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="container border border-light">
-                        <h5 class="font-weight-bold">Current Employees</h5>
+                        <h5 class="font-weight-bold">Current Train Schedule</h5>
                         <table class="table" id="train-table">
                             <thead>
                                 <tr>

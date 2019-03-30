@@ -11,8 +11,12 @@ body {
 }
 
 #train-gif {
-    height: 300px;
-    width: 550px;
+    height: 325px;
+    width: 575px;
+}
+
+#submit-btn {
+    color:  rgb(255, 187, 0);
 }
 
 footer {
