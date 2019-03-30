@@ -5,7 +5,9 @@
     <title>Train Scheduler</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../TrainScheduler/assets/css/style.css">
@@ -21,7 +23,7 @@
                     <div class="jumbotron bg-dark">
                         <h1 class="display-4">Train Scheduler</h1>
                         <p class="lead text-center">We don't want this to happen!</p>
-                        <img src="assets/images/train-funny.gif" alt="trainHitsCarFunny-gif" id="train-gif">
+                        <img src="assets/images/train-funny.gif" class="img-fluid" alt="trainHitsCarFunny-gif" id="train-gif">
                     </div>
                 </div>
             </div>
@@ -30,7 +32,6 @@
                 <div class="col-12">
                     <div class="container border border-light">
                         <h5 class="font-weight-bold">Current Employees</h5>
-                        <hr class="bg-light">
                         <table class="table" id="train-table">
                             <thead>
                                 <tr>
@@ -89,10 +90,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
     <script src="assets/javascript/firebase-db.js"></script>
     <script src="assets/javascript/app.js"></script>
